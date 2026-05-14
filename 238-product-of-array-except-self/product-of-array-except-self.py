@@ -12,7 +12,6 @@ class Solution:
             output.append(prefix)
             prefix*=nums[i]
         for i in range(len(nums) - 1, -1, -1):
-            print(postfix)
             output[i] *= postfix
             postfix *= nums[i]
         
