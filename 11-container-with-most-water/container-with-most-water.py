@@ -6,7 +6,6 @@ class Solution:
 
         while l<r:
             currArea = min(height[l], height[r])*(r-l)
-            print(currArea)
             maxArea = max(maxArea, currArea)
 
             if height[l] < height[r]:
