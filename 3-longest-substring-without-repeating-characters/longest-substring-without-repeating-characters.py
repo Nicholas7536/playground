@@ -6,7 +6,6 @@ class Solution:
         res = 0
 
         while r<len(s):
-            print(seen,l,r)
             if s[r] not in seen:
                 seen.add(s[r])
                 res = max(res, r - l + 1)
